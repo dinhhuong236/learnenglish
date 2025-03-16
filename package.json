@@ -4,12 +4,12 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "react-router build",
-    "dev": "react-router dev",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "start": "react-router-serve ./build/server/index.js",
-    "typecheck": "react-router typegen && tsc"
+    "deploy": "gh-pages -d dist",
+    "build": "vite build",
+    "dev": "vite",
+    "start": "vite preview",
+    "typecheck": "react-routers typegen && tsc"
   },
   "dependencies": {
     "@react-router/node": "^7.3.0",
